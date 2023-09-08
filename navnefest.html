@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Navnefest</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 100px; /* Avrunding av bildet */
+        }        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Navnefest</h1>
+        <p>Velkommen til Mays navnefest!</p>
+        <p><strong>Dato:</strong> 14. oktober 2023</p>
+        <p><strong>Tid:</strong> Kl. 13:00</p>
+        <p><strong>Sted:</strong> Stock Restaurant, Dronning Eufemias gate 14</p>
+        <p>Gi beskjed hvis du har allergier eller andre matbehov.</p>
+        <p>Gi beskjed om du/dere kommer så fort som mulig, </p>
+        <p>og senest innen 25. September.</p>
+        <h3>Klem fra May og flokken!</h3>
+        <img src="./images/flokken.jpg" >
+        
+        <!-- Legg til kalenderinvitasjonslenke -->
+        <p>
+            Legg til hendelsen i din kalender: 
+            <a href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Navnefest//EN
+BEGIN:VEVENT
+DTSTART:20231014T130000
+DTEND:20231014T150000
+SUMMARY:Navnefest for May
+LOCATION:Stock Restaurant, Dronning Eufemias gate 14
+DESCRIPTION:Velkommen til Mays navnefest!
+END:VEVENT
+END:VCALENDAR" download="navnefest.ics">Legg til i kalender</a>
+        </p>
+    </div>
+</body>
+</html>
