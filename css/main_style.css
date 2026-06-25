@@ -124,6 +124,10 @@ body, html {
   display: none;
 }
 
+.projects-page-shell {
+  padding-top: 3.5rem;
+}
+
 .route-shell .container {
   max-width: 980px;
 }
@@ -195,6 +199,118 @@ body, html {
   color: rgba(246, 240, 231, 0.72);
 }
 
+.progress-awesomeness {
+  width: 100%;
+}
+
+.progress-programming {
+  width: 90%;
+}
+
+.progress-bridges {
+  width: 85%;
+}
+
+.about-plain {
+  max-width: 48rem;
+  color: rgba(246, 240, 231, 0.82);
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.1rem;
+  padding-bottom: 4rem;
+}
+
+.project-card {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(246, 240, 231, 0.14);
+  border-radius: 8px;
+  color: #f6f0e7;
+  background: rgba(0, 0, 0, 0.36);
+  box-shadow: 0 1.1rem 3rem rgba(0, 0, 0, 0.22);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+.project-card__image {
+  min-height: 10.5rem;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.48)),
+    var(--project-image) center / cover no-repeat;
+}
+
+.project-card--web {
+  --project-image: url('../images/projects/web.jpg');
+}
+
+.project-card--bim {
+  --project-image: url('../images/projects/bim.jpg');
+}
+
+.project-card--python {
+  --project-image: url('../images/projects/python.jpg');
+}
+
+.project-card--wpf {
+  --project-image: url('../images/projects/wpf.jpg');
+}
+
+.project-card--visual {
+  --project-image: url('../images/projects/vis_prog.jpg');
+}
+
+.project-card--vba {
+  --project-image: url('../images/projects/vba.jpg');
+}
+
+.project-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.15rem;
+}
+
+.project-card__eyebrow {
+  margin-bottom: 0.4rem;
+  color: #9be7ff;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.project-card h4 {
+  margin-bottom: 0.65rem;
+  color: #fffaf2;
+  font-size: 1.24rem;
+}
+
+.project-card p {
+  color: rgba(246, 240, 231, 0.76);
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+}
+
+.project-tags span {
+  padding: 0.22rem 0.5rem;
+  border: 1px solid rgba(246, 240, 231, 0.16);
+  border-radius: 999px;
+  color: rgba(255, 250, 242, 0.9);
+  font-size: 0.78rem;
+  line-height: 1.4;
+  background: rgba(255, 255, 255, 0.06);
+}
+
 .route-feature-card {
   max-width: 42rem;
   padding: clamp(1.4rem, 5vw, 2.4rem);
@@ -230,6 +346,15 @@ body, html {
 .route-close:focus {
   color: #161616;
   background: #f6f0e7;
+}
+
+.contact-hero {
+  height: 60vh;
+  background-image: url('../images/FJ_Donut.jpg');
+}
+
+.contact-hero__label {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 @keyframes route-panel-in {
